@@ -16,13 +16,13 @@ namespace Zoo.ConsoleApp
         {
             var largeAnimals = new ILargeAnimal[]
             {
-        new Lion(new DateTime(2010, 4, 28)),
-        new Lion(new DateTime(2012, 5, 11)),
-        new Zebra(new DateTime(2008, 12, 1))
+                new Lion(new DateTime(2010, 4, 28)),
+                new Lion(new DateTime(2012, 5, 11)),
+                new Zebra(new DateTime(2008, 12, 1))
             };
             var smallAnimals = new ISmallAnimal[] {
-        new Rabbit(new DateTime(2014, 1, 1)),
-      };
+                new Rabbit(new DateTime(2014, 1, 1)),
+            };
             var animals = largeAnimals.Union<IAnimal>(smallAnimals).ToList();
 
             var largeAnimalKeeper = new Keeper<ILargeAnimal>(largeAnimals);
@@ -30,8 +30,8 @@ namespace Zoo.ConsoleApp
 
             var keepers = new IKeeper[]
             {
-        largeAnimalKeeper,
-        smallAnimalKeeper
+                largeAnimalKeeper,
+                smallAnimalKeeper
             };
 
             var babyRabbit = new Rabbit(DateTime.Today);
