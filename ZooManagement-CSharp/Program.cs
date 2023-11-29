@@ -18,7 +18,8 @@ namespace Zoo.ConsoleApp
             {
                 new Lion(new DateTime(2010, 4, 28)),
                 new Lion(new DateTime(2012, 5, 11)),
-                new Zebra(new DateTime(2008, 12, 1))
+                new Zebra(new DateTime(2008, 12, 1)),
+                new Capybara(new DateTime(2020, 3, 19))
             };
             var smallAnimals = new ISmallAnimal[] {
                 new Rabbit(new DateTime(2014, 1, 1)),
