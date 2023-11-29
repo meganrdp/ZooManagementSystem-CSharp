@@ -28,9 +28,14 @@ namespace Zoo.BusinessLogic.Models
       animalToFeed.Feed();
     }
 
-    public void GroomAnimal(AnimalThatCanBeGroomed animalToGroom)
+    public void GroomAnimal(ICanBeGroomed animalToGroom)
     {
       animalToGroom.Groom();
+    }
+
+    public void MuckOutAnimal(ICanHaveMuckSweptOut animalToMuckOut)
+    {
+      animalToMuckOut.MuckOut();
     }
 
     public void StartLookingAfter(TAnimal newAnimal)

@@ -8,6 +8,7 @@ namespace Zoo.BusinessLogic.Models
 
         void FeedAnimal(Animal animalToFeed);
 
-        void GroomAnimal(AnimalThatCanBeGroomed animalToGroom);
+        void GroomAnimal(ICanBeGroomed animalToGroom);
+        void MuckOutAnimal(ICanHaveMuckSweptOut animalToMuckOut);
     }
 }

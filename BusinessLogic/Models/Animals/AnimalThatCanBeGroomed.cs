@@ -1,23 +1,23 @@
-﻿namespace Zoo.BusinessLogic.Models.Animals
-{
-  public class AnimalThatCanBeGroomed : Animal
-  {
+﻿// namespace Zoo.BusinessLogic.Models.Animals
+// {
+//   public class AnimalThatCanBeGroomed : Animal
+//   {
     
 
-    private DateTime lastGroomed;
+//     private DateTime lastGroomed;
 
-    public AnimalThatCanBeGroomed(DateTime dateOfBirth) : base(dateOfBirth)
-    {
-    }
+//     public AnimalThatCanBeGroomed(DateTime dateOfBirth) : base(dateOfBirth)
+//     {
+//     }
 
-    public void Groom()
-    {
-      lastGroomed = DateTime.Now;
-    }
+//     public void Groom()
+//     {
+//       lastGroomed = DateTime.Now;
+//     }
 
-    public override string ToString()
-    {
-      return base.ToString() + $"; Last Groomed {lastGroomed}";
-    }
-  }
-}
+//     public override string ToString()
+//     {
+//       return base.ToString() + $"; Last Groomed {lastGroomed}";
+//     }
+//   }
+// }
