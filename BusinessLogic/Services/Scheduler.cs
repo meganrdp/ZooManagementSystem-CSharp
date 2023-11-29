@@ -49,6 +49,11 @@ namespace Zoo.BusinessLogic.Services
         {
             keeper.MuckOutAnimal(muckyAnimal);
         }
+
+        foreach (var holdableAnimal in keeper.GetResponsibleAnimals<ICanBeHeld>())
+        {
+            keeper.HoldAnimal(holdableAnimal);
+        }
       });
     }
   }

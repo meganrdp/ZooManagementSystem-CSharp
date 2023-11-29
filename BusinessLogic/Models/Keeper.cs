@@ -38,6 +38,11 @@ namespace Zoo.BusinessLogic.Models
       animalToMuckOut.MuckOut();
     }
 
+    public void HoldAnimal(ICanBeHeld animalToHold)
+    {
+      animalToHold.Hold();
+    }
+
     public void StartLookingAfter(TAnimal newAnimal)
     {
       animals.Add(newAnimal);
